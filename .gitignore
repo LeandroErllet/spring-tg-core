@@ -1,1 +1,8 @@
 /target/
+.idea
+*.iml
+.classpath
+.project
+.settings
+server_test/
+dependency-reduced-pom.xml
