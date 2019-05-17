@@ -186,7 +186,6 @@ public class TgMessageDispatcher {
 			throw new TgDispatchException("Multiple matching commands found!");
 		} else if (matchingActions.size() == 0) {
 			Optional<TgAction> talk = actions.stream().filter(action -> action.getName().equalsIgnoreCase("talk")).findFirst();
-			actions.stream().forEach(action -> System.out.println(action.getName()));
 			if (!talk.isPresent()) {
 				throw new TgDispatchException("Command not found");
 			}
